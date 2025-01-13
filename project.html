@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="pro style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
+    <title>Portfolio | Juhi Gosavi</title>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><i class="fa-solid fa-code"></i> Juhi Gosavi</a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="myself.html">About</a></li>
+                <li><a  href="skil.html">Skills</a></li>
+                <li><a  class="active" href="#project">Projects</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+      <section class="projects">
+        <h2 class="heading">Projects <span>I Have Completed.</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="bar">
+                    <div class="info">
+                        <span>Portfolio</span>
+                        <p>I have completed a portfolio project using HTML and CSS. It has three sections:</p>
+                        <ul>
+                          <li>Myself - Displays personal information.</li>
+                          <li>Skill - Includes skills mastered.</li>
+                          <li>Project - Displays completed projects.</li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                      <span>Login Authentication System</span>
+                      <p>Implemented with HTML, CSS, JavaScript, and a backend framework, featuring secure user authentication.</p>
+                  </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                    <span>E-commerce Website</span>
+                    <p>Developed with HTML, CSS, and JavaScript, featuring product display, cart, and responsive design.</p>
+                </div>
+            </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Website Clone</span>
+                        <p>A web-clone project using HTML and CSS, replicating features and interface of the original website.</p>
+                    </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                      <span>Calculator</span>
+                      <p>A fully responsive calculator project using HTML and CSS, supporting all standard operations.</p>
+                  </div>
+              </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Weather App</span>
+                        <p>Built with HTML, CSS, and JavaScript, fetching real-time weather data from an API.</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Todo List App</span>
+                        <p>Created with HTML, CSS, and JavaScript, supporting task management and persistent storage.</p>
+                    </div>
+                </div>
+               
+        </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          /** Navbar toggle functionality **/
+          const menuToggle = document.getElementById("menu");
+          const navbar = document.querySelector(".navbar");
+        
+          menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("fa-times");
+            navbar.classList.toggle("nav-toggle");
+          });
+      
+          /** Close navbar on link click **/
+          const navLinks = document.querySelectorAll(".navbar a");
+          navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              menuToggle.classList.remove("fa-times");
+              navbar.classList.remove("nav-toggle");
+            });
+          });
+        });
+        
+  </script>
+</body>
+</html>

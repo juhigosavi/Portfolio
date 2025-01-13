@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Juhi Gosavi, portfolio, web developer, personal portfolio, portfolio design, portfolio website" />
+    <meta name="description" content="Welcome to Ishwar Gosavi's Portfolio. Web Developer and Enthusiast" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
+    <link id='favicon' rel="shortcut icon" href="h:\assert images.webp" type="image/x-png">
+    <title>Portfolio | Juhi Gosavi</title>favicon
+</head>
+<body>
+<header>
+    <a href="/" class="logo"><i class="fa-solid f-a-code"></i> Juhi Gosavi</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skil.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section Starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <h2>Hi There ,<br/> I'm Juhi Gosavi<span></span></h2>
+        <p>I am into <span class="changing-words">
+            <span>Web developer. </span>
+        </p>
+        <a href="#about" class="btn"><span>About Me</span>
+          <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <div class="box">
+            <h6>Contact info</h6>
+            <p> <i class="fas fa-phone"></i>+91 623-956-7590</p>
+            <p> <i class="fas fa-envelope"></i>juhigosavi@gmail.com</p>
+            <p> <i class="fas fa-map-marked-alt"></i>Shahada Maharashtra, India</p>
+        </div>
+        <div class="socials">
+            <ul class="social-icons">
+              <li><a class="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+              <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li> 
+              <li><a class="github" aria-label="GitHub" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a class="dev" aria-label="YouTube" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image">
+        <img draggable="false" class="tilt" src="h:\main.jpg" alt="Juhi Gosavi">
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        /** Navbar toggle functionality **/
+        const menuToggle = document.getElementById("menu");
+        const navbar = document.querySelector(".navbar");
+      
+        menuToggle.addEventListener("click", () => {
+          menuToggle.classList.toggle("fa-times");
+          navbar.classList.toggle("nav-toggle");
+        });
+      
+        /** Typed.js functionality **/
+        const typed = new Typed(".changing-words", {
+          strings: ["Web Developer .", "AI & Data Science Enthusiast","Software Engineer.", ],
+          typeSpeed: 70,
+          backSpeed: 50,
+          loop: true, // Ensures the animation repeats infinitely
+        });
+      
+        /** Close navbar on link click **/
+        const navLinks = document.querySelectorAll(".navbar a");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            menuToggle.classList.remove("fa-times");
+            navbar.classList.remove("nav-toggle");
+          });
+        });
+      });
+      
+</script>
+
+</body>
+</html>

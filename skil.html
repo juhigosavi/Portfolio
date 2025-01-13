@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="skil style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><i class="fa-solid fa-code"></i> Juhi Gosavi</a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="portfolio.html">Home</a></li>
+                <li><a href="anout.html">About</a></li>
+                <li><a class="active" href="skil.html">Skills</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+            <section class="skills" id="skills">
+                <h2 class="heading"><i class="fas fa-laptop-code"></i> Technical Skills & <span>Abilities</span></h2>
+                <div class="container">
+                    <div class="row" id="skillsContainer">
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\cpng.png" height="50" width="50" />
+                                <span>C</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\c++.png" height="50" width="50" />
+                                <span>C++</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\java.png" height="50" width="50" />
+                                <span>Java</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\python.png" height="50" width="50" />
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\html.png" height="50" width="50" /> 
+                                <span>HTML</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\css.png" height="50" width="50" />
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\js.png" height="50" width="50" />
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\bootstrap.png" height="50" width="50" />
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\tailwindcss.png" height="50" width="50" />
+                                <span>Tailwind-CSS</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\react.png" height="50" width="50" />
+                                <span>React.js</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\sql.png" height="50" width="50" />
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\mongodb.png" height="50" width="50" />
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\php.png" height="50" width="50" />
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\ruby.png" height="50" width="50" />
+                                <span>Ruby</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\github.png" height="50" width="50" />
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\aws.png" height="50" width="50" />
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\figma.png" height="50" width="50" />
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="Skil\firebase.png" height="50" width="50" />
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        /** Navbar toggle functionality **/
+        const menuToggle = document.getElementById("menu");
+        const navbar = document.querySelector(".navbar");
+      
+        menuToggle.addEventListener("click", () => {
+          menuToggle.classList.toggle("fa-times");
+          navbar.classList.toggle("nav-toggle");
+        });
+    
+        /** Close navbar on link click **/
+        const navLinks = document.querySelectorAll(".navbar a");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            menuToggle.classList.remove("fa-times");
+            navbar.classList.remove("nav-toggle");
+          });
+        });
+      });
+      
+</script>
+</body>
+</html>

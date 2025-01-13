@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - juhi Sanjay Gosavi</title>
+    <link rel="stylesheet" href="portfolio style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><i class="fa-solid fa-code"></i> Juhi Gosavi</a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a class="active" href="mypot.html">About</a></li>
+                <li><a href="skil.html">Skills</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="portfolio.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h1 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h1>
+        
+        <div class="row">
+            <div class="image"> 
+                <img draggable="false" class="tilt" src="h:\girl.jpg" alt="Juhi Sanjay Gosavi">
+                
+                <div class="box-container">
+                    <div class="box">
+                      <p><span> age: </span> 26</p>
+                      <p><span> phone : </span> +91 423-486-7850</p>
+                    </div>
+                    <div class="box">
+                      <p><span> email : </span> juhigosavi99@example.com</p>
+                      <p><span> place : </span> Shahada, Maharashtra, India.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                
+                <h3>I'm Juhi Sanjay Gosavi.</h3>
+                <span class="tag">MSC Computer Student | Web Developer</span>
+                
+                <p>I am Msc Computer student. Driven by curiosity and a passion for learning, I focus on leveraging cutting-edge technologies to solve real-world challenges and develop impactful applications. My expertise includes software development, web application design, data analysis, and implementing machine learning models for tasks such as anomaly detection and predictive analytics. </p>
+
+                <h4 class="heading1"><i class="fas fa-lightbulb"></i> Beyond <span>Code</span></h4>
+                <p>I am passionate about how intelligent systems can transform industries and enhance lives. Beyond coding and problem-solving, I focus on exploring emerging technologies and staying informed about innovations, aiming to contribute to impactful projects that drive meaningful change.</p>
+
+                <!-- Skills and Expertise Section -->
+                <h2 class="heading1"><i class="fas fa-lightbulb"></i> Skills & <span>Expertise</span></h2>
+                <ul class="skills">
+                    <li><strong>Computer And Technology Knowledge</strong></li>
+                    <li><strong>Strategic Thinking & Innovation</strong></li>
+                    <li><strong>Problem-Solving & Critical Thinking</strong></li>
+                    <li><strong>Full-Stack Development</strong></li>
+                </ul>
+                <!-- Skills and Expertise Section Ends -->
+                <div class="resumebtn">
+                    <a href="Juhi_Gosavi_Resume.pdf" target="_blank" class="btn" download="Juhi_Gosavi_Resume.pdf">
+                        <span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- about section ends -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            /** Navbar toggle functionality **/
+            const menuToggle = document.getElementById("menu");
+            const navbar = document.querySelector(".navbar");
+          
+            menuToggle.addEventListener("click", () => {
+              menuToggle.classList.toggle("fa-times");
+              navbar.classList.toggle("nav-toggle");
+            });
+        
+            /** Close navbar on link click **/
+            const navLinks = document.querySelectorAll(".navbar a");
+            navLinks.forEach((link) => {
+              link.addEventListener("click", () => {
+                menuToggle.classList.remove("fa-times");
+                navbar.classList.remove("nav-toggle");
+              });
+            });
+          });
+    </script>
+</body>
+</html>

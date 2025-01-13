@@ -1,0 +1,297 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #cbdcf7;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background: #da2b2b;
+  color: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #420177;
+}
+
+/* Preloader Styles */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #abe0ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.loader-container.fade-out {
+  top: -120%;
+}
+
+/* Navbar Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #c3c9ff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #0e2431;
+}
+
+header .logo:hover {
+  color: #da0416;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header .navbar li {
+  margin-left: 2rem;
+}
+
+header .navbar ul li a {
+  font-size: 1.57rem;
+  color: #0e2431;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #da0416;
+  border-bottom: 0.2rem solid #da0416;
+  padding: 0.5rem 0;
+}
+
+/* Hamburger Menu */
+#menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(24, 2, 63);
+  display: none;
+}
+
+/* Hamburger Menu */
+#menu {
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgb(24, 2, 63);
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    #menu {
+      display: block;
+    }
+  
+    header .navbar {
+      position: fixed;
+      top: 6.5rem;
+      right: -120%;
+      width: 75%;
+      height: 100%;
+      background-color: #0e0f31;
+      align-items: flex-start;
+      text-align: left;
+      transition: right 0.3s ease-in-out;
+    }
+  
+    header .navbar ul {
+      flex-direction: column;
+      padding: 1rem; /* Adjusted for better spacing */
+    }
+  
+    
+    header .navbar ul li {
+        margin: 1rem 0;
+        text-align: center;
+      }
+  
+    header .navbar ul li a {
+      display: block;
+      padding: 1rem;
+      text-align: left;
+      color: #fff;
+      font-size: 2.2rem; /* Professional font size */
+    }
+  
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover {
+      padding: 1rem;
+      color: #fff;
+      border-radius: 0.5rem;
+      border-bottom: 0.5rem solid #da0416;
+    }
+  
+    .fa-times {
+      transform: rotate(270deg);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    header .navbar.nav-toggle {
+      right: 0;
+    }
+  }
+
+/* Section Styling */
+section {
+    min-height: 100vh;
+    padding: 2rem 7%;
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    color: #202020;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  
+  .heading span {
+    color: #a7031e;
+  }
+  
+  /* Skills Section */
+  .skills {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding-top: 3rem; 
+}
+
+.skills h2 {
+    color: #ffffff;
+    margin: 5rem 1.5rem 0 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.skills .heading span {
+    color: #ffdd57;
+}
+
+.skills .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+}
+
+.skills .container .bar {
+    padding: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #243b55, #141e30);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.skills .container .bar:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(145deg, #00c6ff, #0072ff);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar .info img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.skills .container .bar:hover .info img {
+    transform: rotate(15deg);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.skills .container .bar .info span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #ffdd57;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.skills .container .bar .info p {
+    font-size: 1rem;
+    text-align: center;
+    color: #eee;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .skills .container {
+        padding: 1.5rem;
+    }
+    .skills .container .row {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1.5rem;
+    }
+}
